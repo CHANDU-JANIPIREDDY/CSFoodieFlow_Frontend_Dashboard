@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+body{
+   margin: 0px;
+   padding: 0px;
+   font-family: "Outfit", sans-serif;
+ 
+}
+.navsection{
+    height: 80px;
+    background-color:#dd7a33;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 0 30px;
+    font-size: medium;
+}
+
+.sideBarSection{
+    width: 100%;
+    max-width: 15%;
+    margin: 0px;
+    height: 100vh;
+    background-color:#ebe7df;
+}
+.sideBarSection ul li{
+    list-style: none;
+    margin-bottom:35px ;
+    font-size: medium;
+    padding: 2%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* LOGIN FORM */
+
+.authForms{
+    display: flex;
+}
+.authFormLogin{
+     display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: -1px 4px 39px -9px rgba(0,0,0,0.7);
+-webkit-box-shadow: -1px 4px 39px -9px rgba(0,0,0,0.7);
+-moz-box-shadow: -1px 4px 39px -9px rgba(0,0,0,0.7);
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+.label-container{
+
+    width: 30vw;
+    margin: 10px;
+}
+.label-name{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: rgb(66, 67, 67);
+}
+
+
+/* ADD FIRM FORM */
+
+.firm-label-container{
+    width: 30vw;
+}
+.firm-label-name{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom:4px;
+    color: rgb(66, 67, 67);
+}
+
+/* CHECK BOXES */
+
+.check-box{
+    display: flex;
+    width: 14vw;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width:10vw;
+}
+.check-box label{
+    font-size: 13px;
+    width: 140px;
+}
+
+.firm-authFormLogin{
+    border: 1px solid rgb(8, 7, 7);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    margin: 10px;
+    height: 95vh;
+}
+
+/* Products Table */
+.product-table{
+    border: 2px solid rgb(96, 91, 91);
+    width: 85vw;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+.product-headings{
+    background-color: rgb(237, 250, 250);
+    padding: 10px;
+}
+.table-body,tr,
+.table-body,td{
+    border: 1px solid rgb(100, 97, 97);
+    padding: 10px;
+    text-align: left;
+}
+/* Not Found */
+.errorSection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.pn-heading{
+    font-weight: bold;
+    font-size: 60px;
+}
+.pn-paragraph{
+    font-size: 20px;
+}
