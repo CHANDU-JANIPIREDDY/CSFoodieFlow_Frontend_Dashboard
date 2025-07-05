@@ -23,6 +23,7 @@ const Login = ({showHomeHandler}) => {
                 setPassword("");
                 localStorage.setItem('loginToken', data.token);
                 showHomeHandler();
+                window.location.reload();
 
                 const vendorId = data.vendorId;
                 console.log("VendorId", vendorId);

@@ -22,7 +22,7 @@ const LandingPage = () => {
   useEffect(()=>{
     const loginToken = localStorage.getItem('loginToken');
     if(loginToken){
-      setShowLogOut(true)
+      setShowLogOut(true); 
     }
   },[])
   useEffect(()=>{
@@ -123,7 +123,7 @@ const logOutHandler = () => {
             <div className="authForms">
               <Sidebar showAddFirmHandler={showAddFirmHandler} showAddPoductsHandler={showAddPoductsHandler} showAllProductsHandler={showAllProductsHandler}
               showFirmTitle={showFirmTitle}/>
-              {showLogin && <Login showHomeHandler={showHomeHandler}/>}
+              {showLogin && <Login showHomeHandler={showHomeHandler} setShowLogOut={setShowLogOut} />}
               {showRegister && <Register showLoginHandler={showLoginHandler}/>}
               {showAddFirm && showLogOut && <AddFirm/>}
               {showAddProducts && showLogOut &&<AddProduct/>}
